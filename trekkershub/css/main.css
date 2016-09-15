@@ -6397,11 +6397,57 @@ table.table > tbody > tr .middle {
 .trip-form .select-holder {
 	margin: 10px 0 0;
 }
-
+.trip-form input[type=text], select {
+	width: 100%;
+	display: inline-block;
+	border: 10px solid #414141;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background-color:#414141;
+}
+.trip-form input[type=submit], select {
+	width: 100%;
+	display: inline-block;
+	border: 10px solid #414141;
+	border-radius: 4px;
+	box-sizing: border-box;
+	background-color:#414141;
+}
 .trip-form .input-group.date {
 	max-width: none;
 }
+/* Vikram Singh changes*/
+.trip-form .input-group.date {
+	border: 4px solid #464646;
+	background: none;
+	border-radius: 0;
+}
 
+.trip-form .input-group.date input {
+	color: #a0a0a0;
+}
+
+.trip-form .input-group.date input::-webkit-input-placeholder {
+	color: #a0a0a0;
+}
+
+.trip-form .input-group.date input:-moz-placeholder {
+	color: #a0a0a0;
+}
+
+.trip-form .input-group.date input::-moz-placeholder {
+	color: #a0a0a0;
+}
+
+.trip-form .input-group.date input:-ms-input-placeholder {
+	color: #a0a0a0;
+}
+
+.trip-form .input-group.date .input-group-addon {
+	background: none;
+	color: #a0a0a0;
+	border: 0;
+}
 .trip-form-v2.trip-search-main {
 	display: inline-block;
 	vertical-align: top;

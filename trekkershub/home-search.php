@@ -231,32 +231,25 @@
 						<form class="trip-form" action="search-process.php" method="post">
 							<fieldset>
 								<div class="holder">
-									<label for="adventure">Select Your Adventure</label>
+									<label for="adventure">Region</label>
 									<div class="select-holder">
-										<input type="text" name="treks" id ="treks" class="form-control">
+										<input type="text" name="treksRegion" id ="treksRegion" value="Type Region Name" onfocus="if(this.value=='Type Region Name') this.value='';"
+                                               onblur="if(this.value=='') this.value='Type Region Name';">
 										<!--<div id = "trekHolder"></div>-->
 									</div>
 								</div>
 								<div class="holder">
-									<label for="destination">Select Your Destination</label>
+									<label for="destination">Trek Name</label>
 									<div class="select-holder">
-										<select class="trip" id="destination" name ="destination">
-											<option>Europe - Spain</option>
-											<option>Europe - Greece</option>
-											<option>Africa - Kenya</option>
-											<option>Africa - Angola</option>
-											<option>Asia - Vietnam</option>
-											<option>Mid East - Dubai</option>
-										</select>
+                                        <input type="text" name="treks" id ="treks" value="Type Trek Name" onfocus="if(this.value=='Type Trek Name') this.value='';"
+                                               onblur="if(this.value=='') this.value='Type Trek Name';">
 									</div>
 								</div>
 								<div class="holder">
-									<label for="date">Select Your Dates</label>
+									<label >Select Your Dates</label>
 									<div class='select-holder'>
-											<div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-												<input class="form-control" type="text" readonly />
-												<span class="input-group-addon"><i class="icon-drop"></i></span>
-											</div>
+                                        <input type="text" name="departDate" id ="datepickerMain" value="Select Dates" onfocus="if(this.value=='Select Dates') this.value='';"
+                                               onblur="if(this.value=='') this.value='Select Dates';">
 										</div>
 								</div>
 								<div class="holder">
@@ -282,52 +275,52 @@
 									<!-- gallery list -->
 									<ul class="gallery-list gallery-with-icon">
 										<li>
-											<a href="#" class="thumbnail">
+											<a href="http://localhost:9000/trekkershub/search-process.php?region=Uttarakhand" class="thumbnail">
 												<img src="img/gallery/himalayan.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-bird"></span>
-												<span class="info">aerial</span>
+												<span class="info">Uttarakhand</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
+											<a href="http://localhost:9000/trekkershub/search-process.php?region=Maharashtra" class="thumbnail">
 												<img src="img/gallery/himalayanScene.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-peak"></span>
-												<span class="info">land</span>
+												<span class="info">Maharashtra</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
+											<a href="http://localhost:9000/trekkershub/search-process.php?region=HimachalPradesh" class="thumbnail">
 												<img src="img/gallery/himalayanValley.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-water"></span>
-												<span class="info">water</span>
+												<span class="info">HimachalPradesh</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
+											<a href="http://localhost:9000/trekkershub/search-process.php?region=Sikkim" class="thumbnail">
 												<img src="img/gallery/Himalayas2.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-asia"></span>
-												<span class="info">asia</span>
+												<span class="info">Sikkim</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
+											<a href="http://localhost:9000/trekkershub/search-process.php?region=JammuAndKashmir" class="thumbnail">
 												<img src="img/gallery/himalayas.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-arctic"></span>
-												<span class="info">arctic</span>
+												<span class="info">Jammu & Kashmir</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
+											<a href="http://localhost:9000/trekkershub/search-process.php?region=Rajasthan" class="thumbnail">
 												<img src="img/gallery/img-06.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-africa"></span>
-												<span class="info">africa</span>
+												<span class="info">Rajasthan</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
+											<a href="http://localhost:9000/trekkershub/search-process.php?region=Assam" class="thumbnail">
 												<img src="img/gallery/img-07.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-plant"></span>
-												<span class="info">nature</span>
+												<span class="info">Assam</span>
 											</a>
 										</li>
 										<li>
@@ -873,8 +866,8 @@
 										<img src="img/thumbs/img-01.jpg" height="112" width="112" alt="image description">
 									</div>
 									<div class="text">
-										<cite>STEVE JORGAN - NORWAY</cite>
-										<q>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.”</q>
+										<cite>Vikram Singh- India</cite>
+										<q>This is the best websites for trekkers like me. Your one stop shop. Look no further.”</q>
 									</div>
 								</blockquote>
 							</div>
@@ -903,7 +896,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- partner list -->
+				<!-- partner list
 				<article class="partner-block">
 					<div class="container">
 						<header class="content-heading">
@@ -968,7 +961,7 @@
 							</div>
 						</div>
 					</div>
-				</article>
+				</article>-->
 			</main>
 		</div>
 		

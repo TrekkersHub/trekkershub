@@ -24,6 +24,17 @@
 	<link media="all" rel="stylesheet" href="css/main.css">
 	<!-- link to revolution css  -->
 	<link rel="stylesheet" type="text/css" href="vendors/revolution/css/settings.css">
+
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script>
+		$(function() {
+			$( "#datepickerMain" ).datepicker({ minDate: -100, maxDate: "+0D" });
+			$("#datepickerMain").datepicker("setDate",new Date());
+			$( "#datepickerMain" ).datepicker( "option", "dateFormat", "dd/mm/yy");
+		});
+	</script>
 </head>
 <body>
 	<div class="preloader" id="pageLoad">
