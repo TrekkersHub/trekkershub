@@ -5,6 +5,7 @@
 	$treksArray  = getTreksForRegion($region);
 
 	$numberOfTreks = count($treksArray);
+	$regionOverview = $treksArray[0]->trekRegionDesc;
 ?>
 
 				<!-- search form -->
@@ -91,14 +92,13 @@
 					<div class="center-text">
 						<div class="container">
 							<h1>Adventures in <?php echo $region?></h1>
-							<strong class="subtitle">The most detailed and modern Adventure theme!</strong>
+							<strong class="subtitle"><?php echo  $regionOverview?></strong>
 							<!-- breadcrumb -->
 							<nav class="breadcrumbs">
 								<ul>
-									<li><a href="#">HOME</a></li>
-									<li><a href="#">DESTINATION</a></li>
-									<li><a href="#">asia</a></li>
-									<li><span>THAILAND</span></li>
+									<li><a href="http://localhost:9000/trekkershub/home-search.php">HOME</a></li>
+
+									<li><span><?php echo $region?></span></li>
 								</ul>
 							</nav>
 						</div>
@@ -164,24 +164,20 @@
 									echo "<article class=\"article\">
 								<div class=\"thumbnail\">
 									<div class=\"img-wrap\">
-										<img src=\"img/listing/img-35.jpg\" height=\"240\" width=\"350\" alt=\"image description\">
+										<img src=\"img/treks/".$value->trekCode.".jpg\" height=\"240\" width=\"350\" alt=\"image description\">
 									</div>
 									<div class=\"description\">
 										<div class=\"col-left\">
 											<header class=\"heading\">
 												<h3><a href=\"#\"> ". $value->trekName ."</a></h3>
-												<div class=\"info-day\">17 Days</div>
+												<div class=\"info-day\"> ". $value->trekDuration." Days</div>
 											</header>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+											<p>".substr($value->desc,0, 500) ."... </p>
 											<div class=\"reviews-holder\">
-												<div class=\"star-rating\">
-													<span><span class=\"icon-star\"></span></span>
-													<span><span class=\"icon-star\"></span></span>
-													<span><span class=\"icon-star\"></span></span>
-													<span><span class=\"icon-star\"></span></span>
-													<span class=\"disable\"><span class=\"icon-star\"></span></span>
-												</div>
-												<div class=\"info-rate\">Based on 75 Reviews</div>
+												<div class=\"star-rating\">".
+													getRatings($value->trekPopularity)
+												."</div>
+												<div class=\"info-rate\">Based on Number of People Opt for this trek</div>
 											</div>
 											<footer class=\"info-footer\">
 												<ul class=\"ico-list\">
@@ -221,12 +217,12 @@
 											</footer>
 										</div>
 										<aside class=\"info-aside\">
-											<span class=\"price\">from <span>$2749</span></span>
+											<span class=\"price\">from <span>Rs ".$value->trekStartPrice. " /Pax</span></span>
 											<div class=\"activity-level\">
 												<div class=\"ico\">
-													<span class=\"icon-level2\"></span>
+													". getDifficultyIcon($value->trekType)."
 												</div>
-												<span class=\"text\">EASY - LEISURLY</span>
+												<span class=\"text\">".$value->trekDifficulty . "</span>
 											</div>
 											<a href=\"#\" class=\"btn btn-default\">explore</a>
 										</aside>
@@ -234,10 +230,34 @@
 								</div>
 							</article>";
 								}
+								function getRatings($trekPopularity){
+									$count = 5;
+									$expression = "";
+									for($x=0; $x<$trekPopularity; $x++){
+										$count--;
+										$expression .= "<span><span class=\"icon-star\"></span></span>";
+									}
+									while ($count > 0){
+										$expression .= "<span class=\"disable\"><span class=\"icon-star\"></span></span>";
+										$count--;
+									}
+									return $expression;
+								}
+								function getDifficultyIcon($difficultyLevel){
+									if($difficultyLevel == 1){
+										return "<span class=\"icon-level1\"></span>";
+									}elseif ($difficultyLevel == 2){
+										return "<span class=\"icon-level2\"></span>";
+									}elseif ($difficultyLevel == 3){
+										return "<span class=\"icon-level3\"></span>";
+									}else{
+										return "<span class=\"icon-level4\"></span>";
+									}
+								}
 							?>
 							
 						</div>
-						<!-- pagination wrap -->
+						<!-- pagination wrap
 						<nav class="pagination-wrap">
 							<div class="btn-prev">
 								<a href="#" aria-label="Previous">
@@ -260,8 +280,8 @@
 							</div>
 						</nav>
 					</div>
-				</div>
-				<!-- recent block -->
+				</div> -->
+				<!-- recent block
 				<aside class="recent-block recent-list recent-wide-thumbnail">
 					<div class="container">
 						<h2 class="text-center text-uppercase">RECENTLY VIEWED</h2>
@@ -432,7 +452,7 @@
 							</article>
 						</div>
 					</div>
-				</aside>
+				</aside>-->
 			</main>
 		</div>
 		<!-- main footer -->
