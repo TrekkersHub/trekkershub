@@ -1,6 +1,6 @@
 <?php 
 
-	require_once("db-connector.php");
+	require_once("./dbUtils/db-connector.php");
 	class Treks {
 		public $id;
 		public $trekCode;
@@ -12,6 +12,10 @@
 		
 	}
 
+/**
+ * @param $regionName
+ * @return array
+ */
 	function getTreksForRegion($regionName){
 		$treksArray = [];
 		$query = "SELECT t.*, td.* from t_treks t, t_trek_details td where t.state_id in

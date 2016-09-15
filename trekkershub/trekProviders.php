@@ -1,6 +1,6 @@
 <?php 
 
-	require_once("db-connector.php");
+	require_once("./dbUtils/db-connector.php");
 
 	class TrekProviders {
 		public $id;
