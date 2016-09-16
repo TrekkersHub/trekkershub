@@ -265,8 +265,8 @@
 				<section class="content-block bg-white">
 					<div class="container">
 						<header class="content-heading">
-							<h2 class="main-heading">THE ADVENTURE</h2>
-							<span class="main-subtitle">Mastering the art of perfect adventure for 10+ years in the wild.</span>
+							<h2 class="main-heading">THE ADVENTURES</h2>
+							<span class="main-subtitle">Explore the world of adventure in Indian States</span>
 							<div class="seperator"></div>
 						</header>
 						<div class="adventure-holder gallery-home-holder">
@@ -327,14 +327,14 @@
 											<a href="#" class="thumbnail">
 												<img src="img/gallery/img-08.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-wildlife"></span>
-												<span class="info">wildness</span>
+												<span class="info">Kerala</span>
 											</a>
 										</li>
 										<li>
 											<a href="#" class="thumbnail">
 												<img src="img/gallery/img-09.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-diamond"></span>
-												<span class="info">all</span>
+												<span class="info">Karnataka</span>
 											</a>
 										</li>
 									</ul>
@@ -342,7 +342,8 @@
 								<div class="col-md-6 text-block">
 									<div class="centered">
 										<h2 class="intro-heading">Living a Life of Adventure</h2>
-										<p class="intro">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </p>
+										<p class="intro">From primarily a cultural tourist destination for several decades, <b>India</b> has emerged as one of the most sought-after adventure destinations for discerning international travelers.
+                                            Perhaps no other single country in the world offers the variety of adventure opportunities which this South Asian nation does</p>
 										<a href="#" class="btn btn-info-sub btn-md btn-shadow radius">Dig More</a>
 									</div>
 								</div>
@@ -610,7 +611,7 @@
 					</div>
 				</div>
 				<!-- article list with boxed style -->
-				<section class="content-block article-boxed">
+				<!-- <section class="content-block article-boxed">
 					<div class="container">
 						<header class="content-heading">
 							<h2 class="main-heading">TOP ADVENTURES</h2>
@@ -790,7 +791,7 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 				<!-- content block with guide info -->
 				<section class="content-block guide-sub guide-add bg-white">
 					<div class="container">

@@ -276,7 +276,7 @@
 										<span class="icon icon-user"></span>
 									</a>
 								</li>
-								<li class="visible-xs visible-sm nav-visible dropdown last-dropdown v-divider">
+								<!--<li class="visible-xs visible-sm nav-visible dropdown last-dropdown v-divider">
 									<a href="my-cart.html" data-toggle="dropdown">
 										<span class="icon icon-cart"></span>
 										<span class="text hidden-md hidden-lg">Cart</span>
@@ -335,7 +335,7 @@
 											</div>
 										</div>
 									</div>
-								</li>
+								</li>-->
 								<li class="dropdown hidden-xs hidden-sm last-dropdown v-divider">
 									<a href="#"><span class="text">EN</span> <span class="icon-angle-down"></span></a>
 									<div class="dropdown-menu dropdown-sm">
@@ -344,41 +344,6 @@
 												<div class="lang-col">
 													<a href="#">
 														<span class="text">English</span>
-													</a>
-												</div>
-											</div>
-											<div class="lang-row">
-												<div class="lang-col">
-													<a href="#">
-														<span class="text">German</span>
-													</a>
-												</div>
-											</div>
-											<div class="lang-row">
-												<div class="lang-col">
-													<a href="#">
-														<span class="text">Russian</span>
-													</a>
-												</div>
-											</div>
-											<div class="lang-row">
-												<div class="lang-col">
-													<a href="#">
-														<span class="text">Czech</span>
-													</a>
-												</div>
-											</div>
-											<div class="lang-row">
-												<div class="lang-col">
-													<a href="#">
-														<span class="text">Chinese</span>
-													</a>
-												</div>
-											</div>
-											<div class="lang-row">
-												<div class="lang-col">
-													<a href="#">
-														<span class="text">Danish</span>
 													</a>
 												</div>
 											</div>
