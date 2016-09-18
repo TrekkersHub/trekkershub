@@ -132,75 +132,6 @@
 									style="z-index: 5; white-space: nowrap; font-size: 60px; font-weight: 900; line-height: 60px;">FIND
 								</div>
 
-								<div class="tp-caption RotatingWords-TitleWhite  tp-resizeme  tounblur rs-parallaxlevel-10" id="slide-333-layer-11"
-									data-x="['left','left','center','center']" 
-									data-hoffset="['170','190','0','0']" 
-									data-y="['top','top','top','top']" 
-									data-voffset="['230',180','180','150']"
-									data-fontsize="['60','60','40','40']"
-									data-lineheight="['60','60','40','40']"
-									data-width="none"
-									data-height="none"
-									data-whitespace="nowrap"
-									data-transform_idle="o:1;"
-									data-transform_in="sX:0.8;sY:0.8;opacity:0;s:500;e:Power4.easeOut;" 
-									data-transform_out="sX:0.9;sY:0.9;opacity:0;s:500;e:Power3.easeIn;s:500;e:Power3.easeIn;" 
-									data-start="1500" 
-									data-splitin="chars" 
-									data-splitout="chars" 
-									data-responsive_offset="on" 
-									data-elementdelay="0.1" 
-									data-endelementdelay="0.03" 
-									data-end="4000" 
-									style="z-index: 7; white-space: nowrap; font-size: 60px; font-weight: 900; line-height: 60px;">WORLD TOURS 
-								</div>
-
-								<div class="tp-caption RotatingWords-TitleWhite   tp-resizeme  tounblur rs-parallaxlevel-10" id="slide-333-layer-13" 
-									data-x="['left','left','center','center']" 
-									data-hoffset="['170','190','0','0']" 
-									data-y="['top','top','top','top']" 
-									data-voffset="['230',180','180','150']"  
-									data-fontsize="['60','60','40','40']"
-									data-lineheight="['60','60','40','40']"
-									data-width="none"
-									data-height="none"
-									data-whitespace="nowrap"
-									data-transform_idle="o:1;"
-									data-transform_in="sX:0.8;sY:0.8;opacity:0;s:500;e:Power3.easeOut;" 
-									data-transform_out="sX:0.9;sY:0.9;opacity:0;s:500;e:Power3.easeIn;s:500;e:Power3.easeIn;" 
-									data-start="4510" 
-									data-splitin="chars" 
-									data-splitout="chars" 
-									data-responsive_offset="on" 
-									data-elementdelay="0.1" 
-									data-endelementdelay="0.03" 
-									data-end="7010" 
-									style="z-index: 8; white-space: nowrap; font-size: 60px; font-weight: 900; line-height: 60px;">JUNGLE SAFARIS 
-								</div>
-
-								<div class="tp-caption RotatingWords-TitleWhite   tp-resizeme  tounblur rs-parallaxlevel-10" id="slide-333-layer-14" 
-									data-x="['left','left','center','center']" 
-									data-hoffset="['170','190','0','0']" 
-									data-y="['top','top','top','top']" 
-									data-voffset="['230',180','180','150']" 
-									data-fontsize="['60','60','40','40']"
-									data-lineheight="['60','60','40','40']"
-									data-width="none"
-									data-height="none"
-									data-whitespace="nowrap"
-									data-transform_idle="o:1;"
-									data-transform_in="sX:0.8;sY:0.8;opacity:0;s:500;e:Power3.easeOut;" 
-									data-transform_out="sX:0.9;sY:0.9;opacity:0;s:500;e:Power3.easeIn;s:500;e:Power3.easeIn;" 
-									data-start="7490" 
-									data-splitin="chars" 
-									data-splitout="chars" 
-									data-responsive_offset="on" 
-									data-elementdelay="0.1" 
-									data-endelementdelay="0.03" 
-									data-end="9990" 
-									style="z-index: 9; white-space: nowrap; font-size: 60px; font-weight: 900; line-height: 60px;">SUMMER FUN 
-								</div>
-
 								<div class="tp-caption RotatingWords-TitleWhite   tp-resizeme  tounblur rs-parallaxlevel-10" id="slide-333-layer-15" 
 									data-x="['left','left','center','center']" 
 									data-hoffset="['170','190','0','0']" 
@@ -228,12 +159,12 @@
 				</div>
 				<div class="banner-text">
 					<div class="center-text">
-						<form class="trip-form" action="search-process.php" method="post">
+						<form class="trip-form" action="trek-search.php" method="post">
 							<fieldset>
 								<div class="holder">
 									<label for="adventure">Region</label>
 									<div class="select-holder">
-										<input type="text" name="treksRegion" id ="treksRegion" value="Type Region Name" onfocus="if(this.value=='Type Region Name') this.value='';"
+										<input type="text" name="treksRegion" id ="treksRegion" value="Type Region Name" onfocus="if(this.value !=='') this.value='';"
                                                onblur="if(this.value=='') this.value='Type Region Name';">
 										<!--<div id = "trekHolder"></div>-->
 									</div>
@@ -241,7 +172,7 @@
 								<div class="holder">
 									<label for="destination">Trek Name</label>
 									<div class="select-holder">
-                                        <input type="text" name="treks" id ="treks" value="Type Trek Name" onfocus="if(this.value=='Type Trek Name') this.value='';"
+                                        <input type="text" name="treks" id ="treks" value="Type Trek Name" onfocus="if(this.value !=='') this.value='';"
                                                onblur="if(this.value=='') this.value='Type Trek Name';">
 									</div>
 								</div>
@@ -793,7 +724,7 @@
 					</div>
 				</section> -->
 				<!-- content block with guide info -->
-				<section class="content-block guide-sub guide-add bg-white">
+				<!--<section class="content-block guide-sub guide-add bg-white">
 					<div class="container">
 						<header class="content-heading">
 							<h2 class="main-heading">MEET THE GUIDES</h2>
@@ -856,7 +787,7 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 				<!-- testimonial block -->
 				<div class="testimonial-holder parallax" data-stellar-background-ratio="0.25" id="testimonial-home-page">
 					<div class="container">

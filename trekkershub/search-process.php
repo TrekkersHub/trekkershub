@@ -161,7 +161,8 @@
 								foreach ($treksArray as $key => $value) {
 									# code...
 								
-									echo "<article class=\"article\">
+									echo "<form action=\"tour-details.php\" method=\"POST\"><article class=\"article\">
+									<input type=\"hidden\" name=\"trekCode\" value=\". $value->trekCode .\">
 								<div class=\"thumbnail\">
 									<div class=\"img-wrap\">
 										<img src=\"img/treks/".$value->trekCode.".jpg\" height=\"240\" width=\"350\" alt=\"image description\">
@@ -224,11 +225,11 @@
 												</div>
 												<span class=\"text\">".$value->trekDifficulty . "</span>
 											</div>
-											<a href=\"#\" class=\"btn btn-default\">explore</a>
+											<input type=\"submit\" class=\"btn btn-default\" value=\"Explore\"/>
 										</aside>
 									</div>
 								</div>
-							</article>";
+							</article></form>>";
 								}
 								function getRatings($trekPopularity){
 									$count = 5;
