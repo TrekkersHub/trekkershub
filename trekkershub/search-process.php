@@ -8,84 +8,7 @@
 	$regionOverview = $treksArray[0]->trekRegionDesc;
 ?>
 
-				<!-- search form -->
-				<form class="search-form" action="#">
-					<fieldset>
-						<a href="#" class="search-opener hidden-md hidden-lg">
-							<span class="icon-search"></span>
-						</a>
-						<div class="search-wrap">
-							<a href="#" class="search-opener close">
-								<span class="icon-cross"></span>
-							</a>
-							<div class="trip-form trip-form-v2 trip-search-main">
-								<div class="trip-form-wrap">
-									<div class="holder">
-										<label>Departing</label>
-										<div class='select-holder'>
-											<div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-												<input class="form-control" type="text" readonly />
-												<span class="input-group-addon"><i class="icon-drop"></i></span>
-											</div>
-										</div>
-									</div>
-									<div class="holder">
-										<label>Returning</label>
-										<div class='select-holder'>
-											<div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
-												<input class="form-control" type="text" readonly />
-												<span class="input-group-addon"><i class="icon-drop"></i></span>
-											</div>
-										</div>
-									</div>
-									<div class="holder">
-										<label for="select-region">Select Region</label>
-										<div class='select-holder'>
-											<select class="trip-select trip-select-v2 region" name="region" id="select-region">
-												<option value="select">Africa</option>
-												<option value="select">Arctic</option>
-												<option value="select">Asia</option>
-												<option value="select">Europe</option>
-												<option value="select">Oceanaia</option>
-												<option value="select">Polar</option>
-											</select>
-										</div>
-									</div>
-									<div class="holder">
-										<label for="select-activity">Select Activity</label>
-										<div class='select-holder'>
-											<select class="trip-select trip-select-v2 acitvity" name="activity" id="select-activity">
-												<option value="Holiday Type">Holiday Type</option>
-												<option value="Holiday Type">Beach Holidays</option>
-												<option value="Holiday Type">Weekend Trips</option>
-												<option value="Holiday Type">Summer and Sun</option>
-												<option value="Holiday Type">Water Sports</option>
-												<option value="Holiday Type">Scuba Diving</option>
-											</select>
-										</div>
-									</div>
-									<div class="holder">
-										<label for="price-range">Price Range</label>
-										<div class='select-holder'>
-											<select class="trip-select trip-select-v2 price" name="activity" id="price-range">
-												<option value="Price Range">Price Range</option>
-												<option value="Price Range">$1 - $499</option>
-												<option value="Price Range">$500 - $999</option>
-												<option value="Price Range">$1000 - $1499</option>
-												<option value="Price Range">$1500 - $2999</option>
-												<option value="Price Range">$3000+</option>
-											</select>
-										</div>
-									</div>
-									<div class="holder">
-										<button class="btn btn-trip btn-trip-v2" type="submit">Find Tours</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</fieldset>
-				</form>
-			</header>
+
 			<!-- main banner -->
 			<section class="banner banner-inner parallax" data-stellar-background-ratio="0.5" id="list-view-normal">
 				<div class="banner-text">
@@ -161,8 +84,8 @@
 								foreach ($treksArray as $key => $value) {
 									# code...
 								
-									echo "<form action=\"tour-details.php\" method=\"POST\"><article class=\"article\">
-									<input type=\"hidden\" name=\"trekCode\" value=\". $value->trekCode .\">
+									echo "<form action=\"trek-details.php\" method=\"POST\"><article class=\"article\">
+									<input type=\"hidden\" name=\"trekCode\" value=\"$value->trekCode\">
 								<div class=\"thumbnail\">
 									<div class=\"img-wrap\">
 										<img src=\"img/treks/".$value->trekCode.".jpg\" height=\"240\" width=\"350\" alt=\"image description\">
@@ -229,7 +152,7 @@
 										</aside>
 									</div>
 								</div>
-							</article></form>>";
+							</article></form>";
 								}
 								function getRatings($trekPopularity){
 									$count = 5;
