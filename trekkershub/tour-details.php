@@ -8,7 +8,8 @@
 require_once("header.php");
 require_once("./dbUtils/db-connector.php");
 
-echo $_POST["trekCode"];
+ $selectedTrekCode = 'TVLLYFLWR';//$_POST["trekCode"];
+//echo $_POST["trekCode"];
 
 
 class TreksDetails {
@@ -20,28 +21,47 @@ class TreksDetails {
     public $trekStartPrice;
     public $trekDuration;
     public $trekBestSeason;
-    public  $trekPopularity;
-    public  $trekType;
-    public  $trekRegionDesc;
+    public $trekPopularity;
+    public $trekType;
+    public $trekAltitude;
+    public $trekDistance;
+    public $trekSeasonEsay;
+    public $trekSeasonModerate;
+    public $trekSeasonDifficult;
+    public $trekEssentials;
+    public $inclusions;
+    public $exclusions;
+    public $day1;
+    public $day2;
+    public $day3;
+    public $day4;
+    public $day5;
+    public $day6;
+    public $day7;
+    public $day8;
+    public $day9;
+    public $day10;
+    public $day11;
+    public $day12;
+    public $day13;
+    public $day14;
+    public $day15;
+
 
 }
 
-/**
- * @param $regionName
- * @return array
- */
-function getTreksForRegion($regionName){
-    $treksArray = [];
-    $query = "";
+
+    $query = "select t.*, ti.*,td.* from t_treks t, t_trek_itinerary ti,t_trek_details td where t.trek_code ='".$selectedTrekCode
+                ."' and t.trek_code=ti.trek_code and t.id=td.trek_id";
 
     $conn = getDBConnection();
 
-    $result = $conn -> query($query);
-
+    $result = $conn-> query($query);
+    $trek = new TreksDetails();
     if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
-            $trek = new Treks();
+
             $trek->id = $row["id"];
             $trek->trekCode = $row["trek_code"];
             $trek->trekName = $row["trek_name"];
@@ -51,21 +71,138 @@ function getTreksForRegion($regionName){
             $trek->trekStartPrice = $row["trek_start_price"];
             $trek->trekDuration = $row["trek_duration"];
             $trek->trekPopularity = $row["trek_popularity"];
-            $trek->trekRegionDesc = $row["state_overview"];
+            $trek->trekAltitude = $row["trek_altitude"];
+            $trek->trekSeasonEsay = $row["trek_season_easy"];
+            $trek->trekSeasonModerate = $row["trek_season_moderate"];
+            $trek->trekSeasonDifficult = $row["trek_season_difficult"];
+            $trek->inclusions = $row["inclusions"];
+            $trek->exclusions = $row["exclusions"];
+            $trek->day1 = $row["day_1"];
+            $trek->day2 = $row["day_2"];
+            $trek->day3 = $row["day_3"];
+            $trek->day4 = $row["day_4"];
+            $trek->day5 = $row["day_5"];
+            $trek->day6 = $row["day_6"];
+            $trek->day7 = $row["day_7"];
+            $trek->day8 = $row["day_8"];
+            $trek->day9 = $row["day_9"];
+            $trek->day10 = $row["day_10"];
+            $trek->day11 = $row["day_11"];
+            $trek->day12 = $row["day_12"];
+            $trek->day13 = $row["day_13"];
+            $trek->day14 = $row["day_14"];
+            $trek->day15 = $row["day_15"];
+            $trek->trekEssentials = $row["trek_essentials"];
 
-            $treksArray[] = $trek;
             #echo "id: " . $row["id"]. " - Name: " . $row["trek_provider_code"]. " " . $row["trek_provider_desc"]. "<br>";
         }
     } else {
         echo "0 results";
     }
 
-    #echo var_dump($treksArray);
+    $itinerary = array();
+
+    array_push($itinerary, $trek->day1);
+    array_push($itinerary, $trek->day2);
+    array_push($itinerary, $trek->day3);
+    array_push($itinerary, $trek->day4);
+    array_push($itinerary, $trek->day5);
+    array_push($itinerary, $trek->day6);
+    array_push($itinerary, $trek->day7);
+    array_push($itinerary, $trek->day8);
+    array_push($itinerary, $trek->day9);
+    array_push($itinerary, $trek->day10);
+    array_push($itinerary, $trek->day11);
+    array_push($itinerary, $trek->day12);
+    array_push($itinerary, $trek->day13);
+    array_push($itinerary, $trek->day14);
+    array_push($itinerary, $trek->day15);
+
+
+   // echo var_dump($itinerary);
     $conn->close();
 
-    return $treksArray;
-}
+    //return $treksArray;
+
 ?>
+    <!-- search form -->
+    <form class="search-form" action="#">
+        <fieldset>
+            <a href="#" class="search-opener hidden-md hidden-lg">
+                <span class="icon-search"></span>
+            </a>
+            <div class="search-wrap">
+                <a href="#" class="search-opener close">
+                    <span class="icon-cross"></span>
+                </a>
+                <div class="trip-form trip-form-v2 trip-search-main">
+                    <div class="trip-form-wrap">
+                        <div class="holder">
+                            <label>Departing</label>
+                            <div class='select-holder'>
+                                <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                                    <input class="form-control" type="text" readonly />
+                                    <span class="input-group-addon"><i class="icon-drop"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="holder">
+                            <label>Returning</label>
+                            <div class='select-holder'>
+                                <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+                                    <input class="form-control" type="text" readonly />
+                                    <span class="input-group-addon"><i class="icon-drop"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="holder">
+                            <label for="select-region">Select Region</label>
+                            <div class='select-holder'>
+                                <select class="trip-select trip-select-v2 region" name="region" id="select-region">
+                                    <option value="select">Africa</option>
+                                    <option value="select">Arctic</option>
+                                    <option value="select">Asia</option>
+                                    <option value="select">Europe</option>
+                                    <option value="select">Oceanaia</option>
+                                    <option value="select">Polar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="holder">
+                            <label for="select-activity">Select Activity</label>
+                            <div class='select-holder'>
+                                <select class="trip-select trip-select-v2 acitvity" name="activity" id="select-activity">
+                                    <option value="Holiday Type">Holiday Type</option>
+                                    <option value="Holiday Type">Beach Holidays</option>
+                                    <option value="Holiday Type">Weekend Trips</option>
+                                    <option value="Holiday Type">Summer and Sun</option>
+                                    <option value="Holiday Type">Water Sports</option>
+                                    <option value="Holiday Type">Scuba Diving</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="holder">
+                            <label for="price-range">Price Range</label>
+                            <div class='select-holder'>
+                                <select class="trip-select trip-select-v2 price" name="activity" id="price-range">
+                                    <option value="Price Range">Price Range</option>
+                                    <option value="Price Range">$1 - $499</option>
+                                    <option value="Price Range">$500 - $999</option>
+                                    <option value="Price Range">$1000 - $1499</option>
+                                    <option value="Price Range">$1500 - $2999</option>
+                                    <option value="Price Range">$3000+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="holder">
+                            <button class="btn btn-trip btn-trip-v2" type="submit">Find Tours</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    </header>
 
 
         <!-- main container -->
@@ -90,7 +227,7 @@ function getTreksForRegion($regionName){
                     </div>
                     <div class="height col-md-6 text-col">
                         <div class="holder">
-                            <h1 class="small-size">Annapurna Circuit Trek</h1>
+                            <h1 class="small-size"><?php echo $trek->trekName?></h1>
                             <div class="price">
                                 from <strong>US $979</strong>
                             </div>
@@ -911,7 +1048,7 @@ function getTreksForRegion($regionName){
                 </div>
             </div>
             <!-- recent block -->
-            <aside class="recent-block recent-gray recent-wide-thumbnail">
+           <!-- <aside class="recent-block recent-gray recent-wide-thumbnail">
                 <div class="container">
                     <h2 class="text-center text-uppercase">RECENTLY VIEWED</h2>
                     <div class="row">
@@ -1081,7 +1218,7 @@ function getTreksForRegion($regionName){
                         </article>
                     </div>
                 </div>
-            </aside>
+            </aside>-->
         </main>
     </div>
     <!-- main footer -->

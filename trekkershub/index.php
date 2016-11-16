@@ -1,103 +1,22 @@
-<?php    
-    // load up your config file
-    
-     
-    require_once("header.php");
-?>
-	
-				<!-- search form -->
-				<form class="search-form" action="#">
-					<fieldset>
-						<a href="#" class="search-opener hidden-md hidden-lg">
-							<span class="icon-search"></span>
-						</a>
-						<div class="search-wrap">
-							<a href="#" class="search-opener close">
-								<span class="icon-cross"></span>
-							</a>
-							<div class="trip-form trip-form-v2 trip-search-main">
-								<div class="trip-form-wrap">
-									<div class="holder">
-										<label>Departing</label>
-										<div class='select-holder'>
-											<div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-												<input class="form-control" type="text" readonly />
-												<span class="input-group-addon"><i class="icon-drop"></i></span>
-											</div>
-										</div>
-									</div>
-									<div class="holder">
-										<label>Returning</label>
-										<div class='select-holder'>
-											<div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
-												<input class="form-control" type="text" readonly />
-												<span class="input-group-addon"><i class="icon-drop"></i></span>
-											</div>
-										</div>
-									</div>
-									<div class="holder">
-										<label for="select-region">Select Region</label>
-										<div class='select-holder'>
-											<select class="trip-select trip-select-v2 region" name="region" id="select-region">
-												<option value="select">Africa</option>
-												<option value="select">Arctic</option>
-												<option value="select">Asia</option>
-												<option value="select">Europe</option>
-												<option value="select">Oceanaia</option>
-												<option value="select">Polar</option>
-											</select>
-										</div>
-									</div>
-									<div class="holder">
-										<label for="select-activity">Select Activity</label>
-										<div class='select-holder'>
-											<select class="trip-select trip-select-v2 acitvity" name="activity" id="select-activity">
-												<option value="Holiday Type">Holiday Type</option>
-												<option value="Holiday Type">Beach Holidays</option>
-												<option value="Holiday Type">Weekend Trips</option>
-												<option value="Holiday Type">Summer and Sun</option>
-												<option value="Holiday Type">Water Sports</option>
-												<option value="Holiday Type">Scuba Diving</option>
-											</select>
-										</div>
-									</div>
-									<div class="holder">
-										<label for="price-range">Price Range</label>
-										<div class='select-holder'>
-											<select class="trip-select trip-select-v2 price" name="activity" id="price-range">
-												<option value="Price Range">Price Range</option>
-												<option value="Price Range">$1 - $499</option>
-												<option value="Price Range">$500 - $999</option>
-												<option value="Price Range">$1000 - $1499</option>
-												<option value="Price Range">$1500 - $2999</option>
-												<option value="Price Range">$3000+</option>
-											</select>
-										</div>
-									</div>
-									<div class="holder">
-										<button class="btn btn-trip btn-trip-v2" type="submit">Find Tours</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</fieldset>
-				</form>
-			</header>
+<?php
+	require_once("header.php")
+	?>
+
 			<!-- main banner -->
 			<div class="banner banner-home">
 				<!-- revolution slider starts -->
-				<div id="rev_slider_279_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="restaurant-header" style="margin:0px auto;background-color:#474d4b;padding:0px;margin-top:0px;margin-bottom:0px;">
-					<div id="rev_slider_70_1" class="rev_slider fullscreenabanner" style="display:none;" data-version="5.1.4">
+				<div id="rev_slider_70_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="web-product-light-hero66" style="margin:0px auto;background-color:#474d4b;padding:0px;margin-top:0px;margin-bottom:0px;">
+					<div id="rev_slider_70_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
 						<ul>
-							<li class="slider-color-schema-dark" data-index="rs-2" data-transition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1000" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
+							<li data-index="rs-81" data-transition="slideoverup" data-slotamount="7"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-saveperformance="off"  data-title="The Menu" data-description="">
 								<!-- main image for revolution slider -->
-								<img src="img/banner/img-01.jpg" alt="image description" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-bgfit="cover" data-no-retina>
+								<img alt="image description" src="img/trekkers.jpg" height="1280" width="1920"  data-lazyload="img/trekkers.jpg" data-bgposition="right center" data-kenburns="on" data-duration="30000" data-ease="Power1.easeOut" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
 
 								<div class="tp-caption tp-resizeme" id="slide-897-layer-7" 
-									data-x="['center','center','center','center']" 
-									data-hoffset="['0','0','0','0']" 
-									data-y="['top','top','middle','middle']" 
-									data-voffset="['160','120','-120','-70']" 
+									data-x="['left','left','center','center']" 
+									data-hoffset="['20','40','0','0']" 
+									data-y="['middle','middle','top','top']" 
+									data-voffset="['-160','-158','100','50']" 
 									data-width="none" 
 									data-height="none" 
 									data-whitespace="nowrap" 
@@ -108,259 +27,89 @@
 									data-start="1500" 
 									data-splitin="none" 
 									data-splitout="none" 
-									data-responsive_offset="on" 
-									style="z-index: 9; white-space: nowrap; font-size: 60px; line-height: 100px;text-align:center;">
-									<span class="icon-wildlife"></span>
-								</div>
-
-								<div class="tp-caption banner-heading-sub tp-resizeme rs-parallaxlevel-0" 
-									data-x="['center','center','center','center']" 
-									data-hoffset="['0','0','0','0']" 
-									data-y="['top','top','middle','middle']" 
-									data-voffset="['280','240','10','20']" 
-									data-fontsize="['48','48','44','28']"
-									data-lineheight="['85','85','50','50']" 
-									data-width="['1200','1000','750','480']" 
-									data-height="none" 
-									data-whitespace="normal" 
-									data-transform_idle="o:1;" 
-									data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
-									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-									data-mask_in="x:0px;y:0px;" 
-									data-mask_out="x:inherit;y:inherit;" 
-									data-start="1000" 
-									data-splitin="none" 
-									data-splitout="none" 
-									data-responsive_offset="on" 
-									style="z-index: 7; letter-spacing: 0; font-weight: 100; text-align: center; color: #ffffff">EXPEDITION OF UNEXPLORED 
-								</div>
-
-								<div class="tp-caption banner-heading-sub tp-resizeme rs-parallaxlevel-10"  
-									data-x="['center','center','center','center']" 
-									data-hoffset="['0','0','0','0']" 
-									data-y="['top','top','middle','middle']" 
-									data-voffset="['340','290','70','70']" 
-									data-fontsize="['60','60','60','40']" 
-									data-lineheight="['110','110','100','60']"
-									data-width="none"
-									data-height="none"
-									data-whitespace="nowrap"
-									data-transform_idle="o:1;" 
-									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" 
-									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-									data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-									data-start="1000" 
-									data-splitin="none" 
-									data-splitout="none" 
-									data-responsive_offset="on" 
-									style="z-index: 8; padding-right: 10px; text-indent: 5px; font-weight: 900; white-space: nowrap;">TERRITORY 
-								</div>
-
-								<div class="tp-caption rev-btn  rs-parallaxlevel-10" id="slide-163-layer-2" 
-									data-x="['center','center','center','center']" 
-									data-hoffset="['0','0','0','0']" 
-									data-y="['middle','middle','middle','middle']" 
-									data-voffset="['150','160','180','150']" 
-									data-width="none"
-									data-height="none"
-									data-whitespace="nowrap"
-									data-transform_idle="o:1;"
-									data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeOut;"
-									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-									data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-									data-mask_out="x:inherit;y:inherit;" 
-									data-start="1250" 
-									data-splitin="none" 
-									data-splitout="none" 
-									data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]'
-									data-responsive_offset="on"> 
-									<a class="btn btn-banner" href="#">PURCHASE</a>
-								</div>
-							</li>
-
-							<li data-index="rs-81" data-transition="slideoverup" data-slotamount="7"  data-easein="default" data-easeout="default" data-masterspeed="1000"  data-rotate="0"  data-saveperformance="off"  data-title="The Menu" data-description="">
-								<!-- main image for revolution slide -->
-								<img alt="image description" src="img/banner/img-01.jpg"  data-lazyload="img/banner/img-02.jpg" data-bgposition="right center" data-kenburns="on" data-duration="30000" data-ease="Power1.easeOut" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
-
-								<div class="tp-caption tp-resizeme" id="slide-897-layer1-7" 
-									data-x="['center','center','center','center']" 
-									data-hoffset="['0','0','0','0']" 
-									data-y="['top','top','middle','middle']" 
-									data-voffset="['160','120','-120','-70']" 
-									data-width="none" 
-									data-height="none" 
-									data-whitespace="nowrap" 
-									data-transform_idle="o:1;" 
-									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power2.easeInOut;" 
-									data-transform_out="opacity:0;s:300;s:300;" 
-									data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-									data-start="1500" 
-									data-splitin="none" 
-									data-splitout="none" 
-									data-responsive_offset="on" 
+									data-responsive_offset="on"
 									style="z-index: 9; white-space: nowrap; font-size: 60px; line-height: 100px;text-align:center;">
 									<span class="icon-hiking-camping"></span>
 								</div>
 
-								<div class="tp-caption banner-heading-sub tp-resizeme rs-parallaxlevel-0" 
-									data-x="['center','center','center','center']" 
-									data-hoffset="['0','0','0','0']" 
-									data-y="['top','top','middle','middle']" 
-									data-voffset="['280','240','10','20']" 
-									data-fontsize="['48','48','44','28']"
-									data-lineheight="['85','85','50','50']" 
-									data-width="['1200','1000','750','480']" 
-									data-height="none" 
-									data-whitespace="normal" 
-									data-transform_idle="o:1;" 
-									data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
-									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-									data-mask_in="x:0px;y:0px;" 
-									data-mask_out="x:inherit;y:inherit;" 
-									data-start="1000" 
-									data-splitin="none" 
-									data-splitout="none" 
-									data-responsive_offset="on" 
-									style="z-index: 7; letter-spacing: 0; font-weight: 100; text-align: center; color: #ffffff">ADEVENTURE TOUR TEMPLATE 
-								</div>
-
-								<div class="tp-caption tp-resizeme banner-heading-sub rs-parallaxlevel-10"  
-									data-x="['center','center','center','center']" 
-									data-hoffset="['-80','-80','-80','-60']" 
-									data-y="['top','top','middle','middle']" 
-									data-voffset="['330','280','60','60']" 
-									data-fontsize="['60','60','60','40']" 
-									data-lineheight="['110','110','100','60']"
-									data-width="none"
-									data-height="none"
-									data-whitespace="nowrap"
-									data-transform_idle="o:1;" 
-									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" 
-									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-									data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-									data-start="1000" 
-									data-splitin="none" 
-									data-splitout="none" 
-									data-responsive_offset="on" 
-									style="z-index: 8; padding-right: 10px; text-indent: 5px; font-weight: 300; font-style: italic; white-space: nowrap; color:">of 
-								</div>
-
-								<div class="tp-caption tp-resizeme banner-heading-sub rs-parallaxlevel-10"  
-									data-x="['center','center','center','center']" 
-									data-hoffset="['30','30','30','20']" 
-									data-y="['top','top','middle','middle']" 
-									data-voffset="['330','280','60','60']" 
-									data-fontsize="['60','60','60','40']" 
-									data-lineheight="['110','110','100','60']"
-									data-width="none"
-									data-height="none"
-									data-whitespace="nowrap"
-									data-transform_idle="o:1;" 
-									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" 
-									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-									data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-									data-start="1000" 
-									data-splitin="none" 
-									data-splitout="none" 
-									data-responsive_offset="on" 
-									style="z-index: 8; padding-right: 10px; text-indent: 5px; font-weight: 900; white-space: nowrap;">2016 
-								</div>
-
-								<div class="tp-caption rev-btn rs-parallaxlevel-10" id="slide-163-layer1-2" 
-									data-x="['center','center','center','center']" 
-									data-hoffset="['0','0','0','0']" 
-									data-y="['middle','middle','middle','middle']" 
-									data-voffset="['150','160','180','150']" 
+								<div class="tp-caption banner-heading-sub tp-resizeme  toblur rs-parallaxlevel-10" id="slide-81-layer-1" 
+									data-x="['left','left','center','center']" 
+									data-hoffset="['20','40','0','0']" 
+									data-y="['top','top','top','top']" 
+									data-voffset="['230',180','220','140']" 
+									data-fontsize="['60','60','0','0']"
+									data-lineheight="['60','60','40','40']"
 									data-width="none"
 									data-height="none"
 									data-whitespace="nowrap"
 									data-transform_idle="o:1;"
-									data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeOut;"
-									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-									data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-									data-mask_out="x:inherit;y:inherit;" 
-									data-start="800" 
+									data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeOut;" 
+									data-transform_out="opacity:0;s:1000;s:1000;" 
+									data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+									data-start="700" 
 									data-splitin="none" 
 									data-splitout="none" 
-									data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]'
-									data-responsive_offset="on"> 
-									<a class="btn btn-banner" href="#">PURCHASE</a>
+									data-responsive_offset="on" 
+									data-visibility=”[‘on’,’on’,’off’,’off’]” 
+									style="z-index: 5; white-space: nowrap; font-size: 60px; font-weight: 900; line-height: 60px;">FIND
 								</div>
-							</li>
+
+								<div class="tp-caption RotatingWords-TitleWhite   tp-resizeme  tounblur rs-parallaxlevel-10" id="slide-333-layer-15" 
+									data-x="['left','left','center','center']" 
+									data-hoffset="['170','190','0','0']" 
+									data-y="['top','top','top','top']" 
+									data-voffset="['230',180','180','150']"
+									data-fontsize="['60','60','40','40']"
+									data-lineheight="['60','60','40','40']"
+									data-width="none"
+									data-height="none"
+									data-whitespace="nowrap"
+									data-transform_idle="o:1;"
+									data-transform_in="sX:0.8;sY:0.8;opacity:0;s:500;e:Power3.easeOut;" 
+									data-transform_out="sX:0.9;sY:0.9;opacity:0;s:500;e:Power3.easeIn;s:500;e:Power3.easeIn;" 
+									data-start="10490" 
+									data-splitin="chars" 
+									data-splitout="chars" 
+									data-responsive_offset="on" 
+									data-elementdelay="0.1" 
+									data-endelementdelay="0.03" 
+									style="z-index: 10; white-space: nowrap; font-size: 60px; font-weight: 900; line-height: 60px;">ADVENTURES 
+								</div>
+							</li>						
 						</ul>
 					</div>
 				</div>
-				<div class="feature-block">
-					<div class="holder">
-						<ul>
-							<li>
-								<a href="#">
-									<span class="ico">
-										<span class="icon-bungee"></span>
-									</span>
-									<span class="info">Bungee Jump</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<span class="ico">
-										<span class="icon-hiking"></span>
-									</span>
-									<span class="info">Hiking Trips</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<span class="ico">
-										<span class="icon-wildlife"></span>
-									</span>
-									<span class="info">Wildlife Safari</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<span class="ico">
-										<span class="icon-peak-climbing"></span>
-									</span>
-									<span class="info">Peak Climbing</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<span class="ico">
-										<span class="icon-mountain-biking"></span>
-									</span>
-									<span class="info">Mount Biking</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<span class="ico">
-										<span class="icon-scuba-diving"></span>
-									</span>
-									<span class="info">Scuba Diving</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<span class="ico">
-										<span class="icon-hunting"></span>
-									</span>
-									<span class="info">Hunting Trip</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<span class="ico">
-										<span class="icon-boating"></span>
-									</span>
-									<span class="info">Sailing Trips</span>
-								</a>
-							</li>
-						</ul>
+				<div class="banner-text">
+					<div class="center-text">
+						<form class="trip-form" action="trek-search.php" method="post">
+							<fieldset>
+								<div class="holder">
+									<label for="adventure">Region</label>
+									<div class="select-holder">
+										<input type="text" name="treksRegion" id ="treksRegion" value="Type Region Name" onfocus="if(this.value !=='') this.value='';"
+                                               onblur="if(this.value=='') this.value='Type Region Name';">
+										<!--<div id = "trekHolder"></div>-->
+									</div>
+								</div>
+								<div class="holder">
+									<label for="destination">Trek Name</label>
+									<div class="select-holder">
+                                        <input type="text" name="treks" id ="treks" value="Type Trek Name" onfocus="if(this.value !=='') this.value='';"
+                                               onblur="if(this.value=='') this.value='Type Trek Name';">
+									</div>
+								</div>
+								<div class="holder">
+									<label >Select Your Dates</label>
+									<div class='select-holder'>
+                                        <input type="text" name="departDate" id ="datepickerMain" value="Select Dates" onfocus="if(this.value=='Select Dates') this.value='';"
+                                               onblur="if(this.value=='') this.value='Select Dates';">
+										</div>
+								</div>
+								<div class="holder">
+									<input class="btn btn-trip" type="submit" value="go wild">
+								</div>
+							</fieldset>
+						</form> 
 					</div>
 				</div>
 			</div>
@@ -369,8 +118,8 @@
 				<section class="content-block bg-white">
 					<div class="container">
 						<header class="content-heading">
-							<h2 class="main-heading">THE ADVENTURE</h2>
-							<span class="main-subtitle">Mastering the art of perfect adventure for 10+ years in the wild.</span>
+							<h2 class="main-heading">THE ADVENTURES</h2>
+							<span class="main-subtitle">Explore the world of adventure in Indian States</span>
 							<div class="seperator"></div>
 						</header>
 						<div class="adventure-holder gallery-home-holder">
@@ -379,66 +128,66 @@
 									<!-- gallery list -->
 									<ul class="gallery-list gallery-with-icon">
 										<li>
-											<a href="#" class="thumbnail">
-												<img src="img/gallery/img-01.jpg" height="165" width="170" alt="image description">
+											<a href="http://trekkershub.ap-southeast-1.elasticbeanstalk.com/trekkershub/search-process.php?region=Uttarakhand" class="thumbnail">
+												<img src="img/regions/Uttarakhand.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-bird"></span>
-												<span class="info">aerial</span>
+												<span class="info">Uttarakhand</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
-												<img src="img/gallery/img-02.jpg" height="165" width="170" alt="image description">
+											<a href="http://trekkershub.ap-southeast-1.elasticbeanstalk.com/trekkershub/search-process.php?region=Maharashtra" class="thumbnail">
+												<img src="img/regions/Maharashtra.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-peak"></span>
-												<span class="info">land</span>
+												<span class="info">Maharashtra</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
-												<img src="img/gallery/img-03.jpg" height="165" width="170" alt="image description">
+											<a href="http://trekkershub.ap-southeast-1.elasticbeanstalk.com/trekkershub/search-process.php?region=HimachalPradesh" class="thumbnail">
+												<img src="img/regions/Himachal.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-water"></span>
-												<span class="info">water</span>
+												<span class="info">HimachalPradesh</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
-												<img src="img/gallery/img-04.jpg" height="165" width="170" alt="image description">
+											<a href="http://trekkershub.ap-southeast-1.elasticbeanstalk.com/trekkershub/search-process.php?region=Sikkim" class="thumbnail">
+												<img src="img/regions/Sikkim.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-asia"></span>
-												<span class="info">asia</span>
+												<span class="info">Sikkim</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
-												<img src="img/gallery/img-05.jpg" height="165" width="170" alt="image description">
+											<a href="http://trekkershub.ap-southeast-1.elasticbeanstalk.com/trekkershub/search-process.php?region=JammuAndKashmir" class="thumbnail">
+												<img src="img/regions/JandK.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-arctic"></span>
-												<span class="info">arctic</span>
+												<span class="info">Jammu & Kashmir</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
-												<img src="img/gallery/img-06.jpg" height="165" width="170" alt="image description">
+											<a href="http://trekkershub.ap-southeast-1.elasticbeanstalk.com/trekkershub/search-process.php?region=Rajasthan" class="thumbnail">
+												<img src="img/regions/rajasthan.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-africa"></span>
-												<span class="info">africa</span>
+												<span class="info">Rajasthan</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
-												<img src="img/gallery/img-07.jpg" height="165" width="170" alt="image description">
+											<a href="http://trekkershub.ap-southeast-1.elasticbeanstalk.com/trekkershub/search-process.php?region=Assam" class="thumbnail">
+												<img src="img/regions/Assam.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-plant"></span>
-												<span class="info">nature</span>
+												<span class="info">Assam</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
-												<img src="img/gallery/img-08.jpg" height="165" width="170" alt="image description">
+											<a href="http://trekkershub.ap-southeast-1.elasticbeanstalk.com/trekkershub/search-process.php?region=Kerala" class="thumbnail">
+												<img src="img/regions/Kerala.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-wildlife"></span>
-												<span class="info">wildness</span>
+												<span class="info">Kerala</span>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="thumbnail">
-												<img src="img/gallery/img-09.jpg" height="165" width="170" alt="image description">
+											<a href="http://trekkershub.ap-southeast-1.elasticbeanstalk.com/trekkershub/search-process.php?region=Karnataka" class="thumbnail">
+												<img src="img/regions/Karnatka.jpg" height="165" width="170" alt="image description">
 												<span class="hover icon-diamond"></span>
-												<span class="info">all</span>
+												<span class="info">Karnataka</span>
 											</a>
 										</li>
 									</ul>
@@ -446,7 +195,8 @@
 								<div class="col-md-6 text-block">
 									<div class="centered">
 										<h2 class="intro-heading">Living a Life of Adventure</h2>
-										<p class="intro">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </p>
+										<p class="intro">From primarily a cultural tourist destination for several decades, <b>India</b> has emerged as one of the most sought-after adventure destinations for discerning international travelers.
+                                            Perhaps no other single country in the world offers the variety of adventure opportunities which this South Asian nation does</p>
 										<a href="#" class="btn btn-info-sub btn-md btn-shadow radius">Dig More</a>
 									</div>
 								</div>
@@ -473,9 +223,9 @@
 								<article class="col-sm-6 col-md-4 article has-hover-s3">
 									<div class="img-wrap">
 										<a href="#">
-											<img src="img/listing/img-01.jpg" height="215" width="370" alt="image description">
+											<img src="img/listing/hampta.jpg" height="215" width="370" alt="image description">
 										</a>
-										<div class="img-caption text-uppercase">Discover Timeless</div>
+										<div class="img-caption text-uppercase">Discover Hampta Pass</div>
 										<div class="hover-article">
 											<div class="star-rating">
 												<span><span class="icon-star"></span></span>
@@ -489,7 +239,7 @@
 												<a href="#"><span class="icon-reply"></span></a>
 											</div>
 											<div class="info-footer">
-												<span class="price">from <span>$2749</span></span>
+												<span class="price">from <span>Rs7000</span></span>
 												<a href="#" class="link-more">Explore</a>
 											</div>
 										</div>
@@ -500,9 +250,9 @@
 								<article class="col-sm-6 col-md-4 article has-hover-s3">
 									<div class="img-wrap">
 										<a href="#">
-											<img src="img/listing/img-02.jpg" height="215" width="370" alt="image description">
+											<img src="img/listing/vof.jpg" height="215" width="370" alt="image description">
 										</a>
-										<div class="img-caption text-uppercase">Finding Egyptians</div>
+										<div class="img-caption text-uppercase">Exploring Valley Of Flower</div>
 										<div class="hover-article">
 											<div class="star-rating">
 												<span><span class="icon-star"></span></span>
@@ -516,7 +266,7 @@
 												<a href="#"><span class="icon-reply"></span></a>
 											</div>
 											<div class="info-footer">
-												<span class="price">from <span>$2749</span></span>
+												<span class="price">from <span>Rs2749</span></span>
 												<a href="#" class="link-more">Explore</a>
 											</div>
 										</div>
@@ -527,9 +277,9 @@
 								<article class="col-sm-6 col-md-4 article has-hover-s3">
 									<div class="img-wrap">
 										<a href="#">
-											<img src="img/listing/img-03.jpg" height="215" width="370" alt="image description">
+											<img src="img/listing/lehlad.jpg" height="215" width="370" alt="image description">
 										</a>
-										<div class="img-caption text-uppercase">Cave Adventures</div>
+										<div class="img-caption text-uppercase">Himalayan Beauty</div>
 										<div class="hover-article">
 											<div class="star-rating">
 												<span><span class="icon-star"></span></span>
@@ -675,12 +425,12 @@
 				<div class="featured-content adventure-holder">
 					<div class="container-fluid">
 						<div class="row same-height">
-							<div class="col-md-6 image height">
+							<div class="col-md-6 image height wow slideInLeft">
 								<div class="bg-stretch">
 									<img src="img/img-01.jpg" height="627" width="960" alt="image description">
 								</div>
 							</div>
-							<div class="col-md-6 text-block height">
+							<div class="col-md-6 text-block height wow slideInRight">
 								<div class="centered">
 									<h2 class="intro-heading">Botswana &amp; Angola - The Tribe</h2>
 									<p class="intro">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, Duis sed odio sit amet nibh vulputate cursus a it amet mauris.</p>
@@ -689,12 +439,12 @@
 							</div>
 						</div>
 						<div class="row same-height">
-							<div class="col-md-6 image height">
+							<div class="col-md-6 image height wow slideInRight">
 								<div class="bg-stretch">
 									<img src="img/img-02.jpg" height="627" width="960" alt="image description">
 								</div>
 							</div>
-							<div class="col-md-6 text-block height">
+							<div class="col-md-6 text-block height wow slideInLeft">
 								<div class="centered">
 									<h2 class="intro-heading">Maritime Adventure - The Arctic</h2>
 									<p class="intro">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, Duis sed odio sit amet nibh vulputate cursus a it amet mauris.</p>
@@ -714,7 +464,7 @@
 					</div>
 				</div>
 				<!-- article list with boxed style -->
-				<section class="content-block article-boxed">
+				<!-- <section class="content-block article-boxed">
 					<div class="container">
 						<header class="content-heading">
 							<h2 class="main-heading">TOP ADVENTURES</h2>
@@ -894,9 +644,9 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 				<!-- content block with guide info -->
-				<section class="content-block guide-sub guide-add bg-white">
+				<!--<section class="content-block guide-sub guide-add bg-white">
 					<div class="container">
 						<header class="content-heading">
 							<h2 class="main-heading">MEET THE GUIDES</h2>
@@ -959,7 +709,7 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 				<!-- testimonial block -->
 				<div class="testimonial-holder parallax" data-stellar-background-ratio="0.25" id="testimonial-home-page">
 					<div class="container">
@@ -970,8 +720,8 @@
 										<img src="img/thumbs/img-01.jpg" height="112" width="112" alt="image description">
 									</div>
 									<div class="text">
-										<cite>STEVE JORGAN - NORWAY</cite>
-										<q>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.”</q>
+										<cite>Vikram Singh- India</cite>
+										<q>This is the best websites for trekkers like me. Your one stop shop. Look no further.”</q>
 									</div>
 								</blockquote>
 							</div>
@@ -1000,7 +750,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- partner list -->
+				<!-- partner list
 				<article class="partner-block">
 					<div class="container">
 						<header class="content-heading">
@@ -1065,11 +815,11 @@
 							</div>
 						</div>
 					</div>
-				</article>
+				</article>-->
 			</main>
 		</div>
-		<?php    
-    // load up your config file
-     
-    require_once("footer.php");
-?>
+		
+		<?php
+			require_once("footer.php")
+		?>
+		
